@@ -1,0 +1,33 @@
+
+.root{
+    display: inline-flex;   
+    width: 100%;
+    margin: 0 auto;
+    :global{
+        li a{
+            padding: 8px;
+            background-color: #1A1A1A;
+            color: #ffffff;
+            border-color: #0E0E0E;
+            box-shadow: none;
+            
+        }
+        li a:focus,
+        li a:hover,
+        li span:focus,
+        li span:hover {
+            box-shadow: none;
+            color: #ffffff;
+            background-color: #821313;
+            border-color: #1A1A1A;
+        }
+    }
+
+    :global{
+        .selected{
+            a{
+                background-color: #821313;
+            }
+        }
+    }
+}

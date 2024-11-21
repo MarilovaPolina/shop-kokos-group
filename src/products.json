@@ -1,0 +1,260 @@
+[
+    {
+        "id": 1,
+        "images": [
+            "../assets/img/shop_bg.png",
+            "../assets/img/item1.png",
+            "../assets/img/shop_bg.png",
+            "../assets/img/shop_bg.png",
+            "../assets/img/shop_bg.png"
+        ],
+        "price": 1999,
+        "name": "Футболка Basic",
+        "article": "1273372970",
+        "availability": true,
+        "sizes": ["S"],
+        "color": "Черный",
+        "gender": "Мужской",
+        "description": "Удобная футболка из высококачественного хлопка.",
+        "category": "Футболки"
+    },
+    {
+        "id": 2,
+        "images": [
+            "../assets/img/item2.jpg",
+            "../assets/img/item1.png",
+            "../assets/img/item3.jpg"
+        ],
+        "price": 2999,
+        "name": "Спортивные штаны",
+        "article": "1273372971",
+        "availability": true,
+        "sizes": ["M", "L"],
+        "color": "Синий",
+        "gender": "Мужской",
+        "description": "Теплые и удобные спортивные штаны для тренировок.",
+        "category": "Штаны"
+    },
+    {
+        "id": 3,
+        "images": [
+            "../assets/img/item1.png",
+            "../assets/img/item2.jpg",
+            "../assets/img/item3.jpg"
+        ],
+        "price": 1499,
+        "name": "Шорты летние",
+        "article": "1273372972",
+        "availability": false,
+        "sizes": ["M", "L", "XL"],
+        "color": "Красный",
+        "gender": "Мужской",
+        "description": "Легкие шорты для пляжного отдыха.",
+        "category": "Шорты"
+    },
+    {
+        "id": 4,
+        "images": [
+            "../assets/img/item1.png",
+            "../assets/img/item2.jpg",
+            "../assets/img/item3.jpg"
+        ],
+        "price": 4999,
+        "name": "Куртка утепленная",
+        "article": "1273372973",
+        "availability": true,
+        "sizes": ["S", "M", "L"],
+        "color": "Зеленый",
+        "gender": "Мужской",
+        "description": "Теплая куртка для осенне-зимнего периода.",
+        "category": "Куртки"
+    },
+    {
+        "id": 5,
+        "images": [
+            "../assets/img/item1.png",
+            "../assets/img/item2.jpg",
+            "../assets/img/item3.jpg"
+        ],
+        "price": 599,
+        "name": "Носки спортивные",
+        "article": "1273372974",
+        "availability": true,
+        "sizes": ["M", "L"],
+        "color": "Белый",
+        "gender": "Мужской",
+        "description": "Комфортные и дышащие спортивные носки.",
+        "category": "Носки"
+    },
+    {
+        "id": 6,
+        "images": [
+            "../assets/img/item1.png",
+            "../assets/img/item2.jpg",
+            "../assets/img/item3.jpg"
+        ],
+        "price": 2499,
+        "name": "Головной убор",
+        "article": "1273372975",
+        "availability": true,
+        "sizes": ["–"],
+        "color": "Черный",
+        "gender": "Мужской",
+        "description": "Стильная шапка для повседневного использования.",
+        "category": "Головные уборы"
+    },
+    {
+        "id": 7,
+        "images": [
+            "../assets/img/item1.png",
+            "../assets/img/item2.jpg",
+            "../assets/img/item3.jpg"
+        ],
+        "price": 3999,
+        "name": "Спортивная сумка",
+        "article": "1273372976",
+        "availability": true,
+        "sizes": ["–"],
+        "color": "Синий",
+        "gender": "Мужской",
+        "description": "Практичная сумка для тренировок и походов.",
+        "category": "Сумки"
+    },
+    {
+        "id": 8,
+        "images": [
+            "../assets/img/item1.png",
+            "../assets/img/item2.jpg",
+            "../assets/img/item3.jpg"
+        ],
+        "price": 3999,
+        
+        "name": "Толстовка с капюшоном",
+        "article": "1273372977",
+        "availability": false,
+        "sizes": ["M", "L"],
+        "color": "Серый",
+        "gender": "Мужской",
+        "description": "Удобная толстовка с капюшоном для холодной погоды.",
+        "category": "Толстовки"
+    },
+    {
+        "id": 9,
+        "images": [
+            "../assets/img/item1.png",
+            "../assets/img/item2.jpg",
+            "../assets/img/item3.jpg"
+        ],
+        "price": 799,
+        "name": "Аксессуар для волос",
+        "article": "1273372978",
+        "availability": true,
+        "sizes": ["–"],
+        "color": "Черный",
+        "gender": "Мужской",
+        "description": "Удобный аксессуар для волос.",
+        "category": "Аксессуары"
+    },
+    {
+        "id": 10,
+        "images": [
+            "../assets/img/item1.png",
+            "../assets/img/item2.jpg",
+            "../assets/img/item3.jpg"
+        ],
+        "price": 2499,
+        "name": "Футболка с принтом",
+        "article": "1273372979",
+        "availability": false,
+        "sizes": ["S", "M", "L"],
+        "color": "Белый",
+        "gender": "Мужской",
+        "description": "Уникальная футболка с ярким принтом.",
+        "category": "Футболки"
+    },
+    {
+        "id": 11,
+        "images": [
+            "../assets/img/item1.png",
+            "../assets/img/item2.jpg",
+            "../assets/img/item3.jpg"
+        ],
+        "price": 3499,
+        "name": "Штаны для тренировок",
+        "article": "1273372980",
+        "availability": true,
+        "sizes": ["M", "L"],
+        "color": "Темно-синий",
+        "gender": "Мужской",
+        "description": "Штаны для тренировок в зале.",
+        "category": "Штаны"
+    },
+    {
+        "id": 12,
+        "images": [
+            "../assets/img/item1.png",
+            "../assets/img/item2.jpg",
+            "../assets/img/item3.jpg"
+        ],
+        "price": 1999,
+        "name": "Летние шорты",
+        "article": "1273372981",
+        "availability": true,
+        "sizes": ["L", "XL"],
+        "color": "Желтый",
+        "gender": "Мужской",
+        "description": "Комфортные летние шорты.",
+        "category": "Шорты"
+    },
+    {
+        "id": 13,
+        "images": [
+            "../assets/img/item1.png",
+            "../assets/img/item2.jpg",
+            "../assets/img/item3.jpg"
+        ],
+        "price": 2999,
+        "name": "Куртка ветровка",
+        "article": "1273372982",
+        "availability": true,
+        "sizes": ["M", "L", "XL"],
+        "color": "Черный",
+        "gender": "Мужской",
+        "description": "Легкая ветровка на весну.",
+        "category": "Куртки"
+    },
+    {
+        "id": 14,
+        "images": [
+            "../assets/img/item1.png",
+            "../assets/img/item2.jpg",
+            "../assets/img/item3.jpg"
+        ],
+        "price": 499,
+        "name": "Носки повседневные",
+        "article": "1273372983",
+        "availability": true,
+        "sizes": ["M", "L"],
+        "color": "Серый",
+        "gender": "Мужской",
+        "description": "Удобные носки на каждый день.",
+        "category": "Носки"
+    },
+    {
+        "id": 15,
+        "images": [
+            "../assets/img/item1.png",
+            "../assets/img/item2.jpg",
+            "../assets/img/item3.jpg"
+        ],
+        "price": 1299,
+        "name": "Толстовка оверсайз",
+        "article": "1273372984",
+        "availability": false,
+        "sizes": ["L", "XL"],
+        "color": "Темно-синий",
+        "gender": "Мужской",
+        "description": "Стильная толстовка оверсайз.",
+        "category": "Толстовки"
+    }
+]
