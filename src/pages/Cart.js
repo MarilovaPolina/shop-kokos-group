@@ -1,3 +1,5 @@
+import CartContent from '../components/CartContent';
+
 export default function Cart() {
   return (
     <main>
@@ -23,10 +25,8 @@ export default function Cart() {
         </div>
       </div>
 
-      <div className="container">
-        <div className="one_competition_media_section"></div>
-        <button className="a_btn">Оформить заказ →</button>
-      </div>
+      <CartContent />
+
     </main>
   );
 }

@@ -2073,16 +2073,26 @@ footer {
 }
 
 .no_media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
     text-align: center;
-    margin: 3vw auto;
-    margin-bottom: 5vw;
+    margin: 0;
 
     dotlottie-player {
+        display: block;
         margin: 0 auto;
     }
 
     p {
         font-size: clamp(1rem, 0.858rem + 0.67vw, 1.5rem);
+
+        small{
+            text-transform: none;
+            color: #4C4C4C;
+        }
     }
 }
 
@@ -2266,7 +2276,22 @@ footer {
     padding-bottom: 0;
 }
 
+.cart_clear{
+    color: white;
+    margin-top: 4vw;
+    display: flex;
+    align-items: end;
 
+    span{
+        margin-left: 0.5vw;
+        text-decoration: underline;
+    }
+}
+
+.total_price{
+    font-family: "Oswald";
+    font-size: 32px;
+}
 .order_cart_profile {
     margin-top: 3vw;
     margin-bottom: 1vw;
@@ -2370,8 +2395,9 @@ footer {
 
 .product_count{
     background-color: #af2c2c;
-    padding: 5px 8px;
-    margin-right: 0.5vw;
+    padding-inline: 8px;
+    height: 100%;
+    margin-inline: 0.5vw;
     border-radius: 3px;
     font-weight: 500;
 }
@@ -2566,6 +2592,11 @@ footer {
     text-transform: uppercase;
 }
 
+.red {
+    color: #c52b2b;
+    text-transform: uppercase;
+}
+
 .sizes {
     flex-wrap: wrap;
     display: flex;
@@ -2599,24 +2630,21 @@ footer {
 }
 
 .size_btn:hover {
-    background-color: rgb(30, 30, 30);
+    background-color: #520c0c;
 }
 
 .item_info_block {
     display: flex;
     flex-direction: column;
     height: 100%;
-    /* Убедитесь, что высота задана */
 }
 
 .interactive_part {
     margin-bottom: auto;
-    /* Принуждает interactive_part оставаться вверху */
 }
 
 .description_part {
     margin-top: auto;
-    /* Принуждает description_part оставаться внизу */
 }
 
 
@@ -3053,5 +3081,5 @@ canvas {
 }
 
 .product_preview_sizes .size_label span:hover{
-    background-color: #363636;
+    background-color: #550e0e;
 }

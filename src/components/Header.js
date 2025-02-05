@@ -1,6 +1,10 @@
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux"
+
 
 export default function Header() {
+  const items = useSelector(state => state.cart.items);
+  const totalCount = items.reduce((sum, item) => sum + item.count, 0);
   return (
     <>
       <header>
@@ -16,7 +20,8 @@ export default function Header() {
               <ul>
                 <li>
                   <Link to="/cart">
-                    <img loadinging="lazy" src="assets/img/cart.svg" />
+                    <img loadinging="lazy" src="/assets/img/cart.svg" />
+                    <span> {totalCount} </span>
                   </Link>
                 </li>
                 <li>
@@ -45,13 +50,13 @@ export default function Header() {
                 </li>
                 <li className="networks">
                   <a href="#">
-                    <img loadinging="lazy" src="assets/img/tg.svg" />
+                    <img loadinging="lazy" src="/assets/img/tg.svg" />
                   </a>
                   <a href="#">
-                    <img loadinging="lazy" src="assets/img/youtube.svg" />
+                    <img loadinging="lazy" src="/assets/img/youtube.svg" />
                   </a>
                   <a href="#">
-                    <img loadinging="lazy" src="assets/img/vk.svg" />
+                    <img loadinging="lazy" src="/assets/img/vk.svg" />
                   </a>
                 </li>
               </ul>
@@ -59,10 +64,10 @@ export default function Header() {
 
             <div className="header_side_buttons">
               <a href="search.html" className="search_btn">
-                <img loadinging="lazy" src="assets/img/search.svg" width="42px" />
+                <img loadinging="lazy" src="/assets/img/search.svg" width="42px" />
               </a>
               <a href="profile.html" className="log_in">
-                <img loadinging="lazy" src="assets/img/login.svg" width="42px" />
+                <img loadinging="lazy" src="/assets/img/login.svg" width="42px" />
               </a>
 
               <button className="menu_btn">

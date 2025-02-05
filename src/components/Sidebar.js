@@ -1,6 +1,17 @@
 import React from 'react';
 import { useSearchParams } from 'react-router-dom';
+
+import { useSelector, useDispatch } from 'react-redux';
+import { handleSelect } from "../redux/slices/filterCategorySlice"
+
 export default function Categories({}) {
+  const selectedCategories = useSelector(state => state.filter.selectedCategories);
+  const dispatch = useDispatch();
+  
+  const onChangeCategories = ({value, isChecked}) =>{
+    dispatch(handleSelect({value, isChecked}));
+  }
+
   const [filterParams, setFilterParams] = useSearchParams();
   const [checkedList, setCheckedList] = React.useState([]);
   const productCategories = [
@@ -16,21 +27,10 @@ export default function Categories({}) {
     'Другое',
   ];
 
-  const handleSelect = (event) => {
-    const value = event.target.value;
-    const isChecked = event.target.checked;
-
-    if (isChecked) {
-      setCheckedList([...checkedList, value]);
-    } else {
-      const filterChecked = checkedList.filter((item) => item != value);
-      setCheckedList(filterChecked);
-    }
-  };
-
+  // все элементы массива через тире передаем в url
   React.useEffect(() => {
-    setFilterParams(checkedList.length > 0 && 'category=' + checkedList.join('-').toLowerCase());
-  }, [checkedList]);
+    setFilterParams(selectedCategories.length > 0 && 'category=' + selectedCategories.join('-').toLowerCase());
+  }, [selectedCategories]);
 
   return (
     <div className="sidebar">
@@ -43,7 +43,7 @@ export default function Categories({}) {
               name="categories"
               className="checkbox"
               value={category}
-              onChange={(event) => handleSelect(event)}
+              onChange={(event)=>onChangeCategories({value: event.target.value, isChecked: event.target.checked})}
             />
             {category}
           </label>
