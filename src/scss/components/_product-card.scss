@@ -1,0 +1,81 @@
+
+.product_count{
+    background-color: #af2c2c;
+    padding-inline: 8px;
+    height: 100%;
+    margin-inline: 0.5vw;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+.item_card {
+    margin-bottom: 1.5vw;
+    transition: all 0.2s;
+    background-color: #151515;
+    border-radius: 7px;
+    padding: clamp(0.75rem, 0.562rem + 0.39vw, 0.938rem);
+
+    &_text {
+        padding-top: clamp(0.813rem, 0.599rem + 1vw, 1.563rem);
+        font-size: clamp(0.8rem, 0.929rem + 0.33vw, 1.25rem);
+        line-height: clamp(0.8rem, 0.929rem + 0.33vw, 1.25rem);
+        padding-bottom: 0.5vw;
+
+        .item_price {
+            margin-top: 1vw;
+            font-family: "Oswald";
+            font-size: clamp(1.125rem, 1.018rem + 0.5vw, 1.5rem);
+        }
+    }
+
+    .sizes{
+        .size_label{
+            .size_btn{
+                background-color: #272727;
+            }
+            
+            .size_radio:checked+.size_btn {
+                background-color: #821313;
+            }
+            
+            .size_btn:hover {
+                background-color: #520c0c;
+            }
+            
+        }
+    }
+
+    &:hover {
+        border: 1px solid #373737;
+        background-color: #1c1b1b;
+    }
+
+    .cart_icon_btn{
+        margin-right: 0.5vw;
+    }
+}
+
+.product_img_wrapper {
+    border-radius: 5px;
+    width: 100%;
+    position: relative;
+    padding-bottom: 100%;
+    overflow: hidden;
+
+    .product_img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+.product_img img {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
